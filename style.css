@@ -4,10 +4,11 @@
 
 body{
     background-color: blue;
+    overflow-x: hidden;
 }
 
 header{
-    background-color: lightgreen;
+    background-color: rgb(73, 143, 73);
     padding-left: 30px;
     padding-bottom: 5px;
     width: 100%;
@@ -36,7 +37,7 @@ nav ul li {
     border-style: solid;
     border-color: white;
     border-radius: 5px;
-    background-color: rgb(186, 229, 186);
+    background-color: rgb(157, 219, 157);
 }
 
 nav ul li:hover{
@@ -45,10 +46,15 @@ nav ul li:hover{
 
 main{
     margin-top: 50px;
-    background-color: lightgreen;
+    background-color: rgb(73, 143, 73);
     padding-left: 30px;
     width: 100%;
     border-radius: var(--curveLeft);
+    padding-bottom: 1px;
+}
+
+h2{
+    padding-top: 5px;
 }
 
 section{
@@ -57,4 +63,10 @@ section{
     padding-left: 40px;
     width: 100%;
     border-radius: var(--curveLeft);
+    filter: drop-shadow(5px -5px 5px #333333);
+    line-height: 100%;
+}
+
+section img{
+    padding-right: 5px;
 }
