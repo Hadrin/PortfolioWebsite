@@ -1,17 +1,20 @@
+/*curveLeft used to curve only left side of filled in sections*/
 :root{
     --curveLeft: 5px 0px 0px 5px;
 }
 
+/*overflow-x removes horizontal scroll-bar, not sure why it appears in the first place */
 body{
     background-color: blue;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 header{
     background-color: rgb(73, 143, 73);
-    padding-left: 30px;
+    padding-left: 5%;
     padding-bottom: 5px;
-    width: 100%;
+    width: 98%;
     border-radius: var(--curveLeft);
 }
 
@@ -40,6 +43,7 @@ nav ul li {
     background-color: rgb(157, 219, 157);
 }
 
+/*Makes the buttons change color when the mouse hovers over them*/
 nav ul li:hover{
     background-color: white;
 }
@@ -57,6 +61,7 @@ h2{
     padding-top: 5px;
 }
 
+/*Pseudo 3d effect created here */
 section{
     margin-top: 15px;
     background-color: lightskyblue;
@@ -70,3 +75,41 @@ section{
 section img{
     padding-right: 5px;
 }
+
+#work2{
+    margin-left: 30%;
+}
+
+#work3{
+    margin-left: 60%;
+}
+
+@media screen  and (max-width: 1550px){
+    #work2{
+        margin-left: 20%;
+    }
+
+    #work3{
+        margin-left: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 1056px) {
+      #work2{
+          margin-left: 10%;
+      }
+
+      #work3{
+          margin-left: 20%;
+      }
+  }
+
+  @media screen and (max-width: 790px) {
+      #work2{
+          margin-left: 0%;
+      }   
+
+      #work3{
+          margin-left: 0%;
+      }
+  }
