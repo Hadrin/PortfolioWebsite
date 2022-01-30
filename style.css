@@ -5,7 +5,7 @@
 
 /*overflow-x removes horizontal scroll-bar, not sure why it appears in the first place */
 body{
-    background-color: blue;
+    background-color: rgb(157, 219, 157);
     overflow-x: hidden;
     max-width: 100%;
 }
